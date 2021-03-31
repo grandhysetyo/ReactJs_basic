@@ -31,7 +31,10 @@
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script>                
         // Example create element + nested Element
-        const link = React.createElement('a', {}, 'Hello, React JS')
+        const link = React.createElement('a', {
+            href: 'https://reactjs.org/docs/add-react-to-a-website.html',
+            target: '_blank'
+        }, 'Hello, React JS')
         const heading = React.createElement('h1', null, link)
         ReactDOM.render(heading, document.getElementById('container'))
     </script>
